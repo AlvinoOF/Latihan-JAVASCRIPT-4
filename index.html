@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Latihan JavaScript 4</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- nav -->
+    <nav>
+        <div class="nav-wrapper blue">
+            <div class="container">
+                <a href="#" class="brand-logo center">Babastudio</a>
+                <ul class="right">
+                    <li><a href="#" class="clear-btn btn blue lighten-3">Clear all</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end -->
+    <br>
+    <div class="container">
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title">insert data produk</span>
+                <form class="col s12">
+                    <div class="row">
+                      <div class="input-field col s6">
+                        <input placeholder="nama produk" id="nama_produk" type="text">
+                        <label for="nama_produk">Nama Produk</label>
+                      </div>
+					  
+                      <div class="input-field col s6">
+                        <input id="harga_produk" type="number">
+                        <label for="harga_produk">Harga Produk</label>
+                      </div>
+                    </div>
+					
+					<div class="input-field col s6">
+                        <input id="kategori_produk" type="text">
+                        <label for="kategori_produk">Kategori Produk</label>
+                      </div>
+                    </div>
+					
+                    <button class="add-btn btn blue darken-3">
+                        <i class="fa fa-plus"></i> Tambah data produk
+                    </button>
+
+                    <button class="update-btn btn orange">
+                        <i class="fa fa-pencil-square-o"></i> Update data produk
+                    </button>
+
+                    <button class="delete-btn btn red">
+                        <i class="fa fa-remove"></i> Hapus data produk
+                    </button>
+                    <button class="back-btn btn grey pull-right">
+                        <i class="fa fa-backward" aria-hidden="true"></i> Back
+                    </button>
+                </form>
+            </div>
+        </div>
+        <h3 class="center-align">Total Harga: <span class="total_harga">0</span></h3>
+        <ul id="item-list" class="collection">
+            
+        </ul>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="aplikasi.js"></script>
+</body>
+</html>
